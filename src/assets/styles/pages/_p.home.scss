@@ -1,0 +1,14 @@
+.home {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+	&__logo {
+		width: 40vw;
+		max-width: 300px;
+	}
+
+	&__form {
+		
+	}
+}
