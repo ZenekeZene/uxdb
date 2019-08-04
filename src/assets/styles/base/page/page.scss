@@ -32,8 +32,7 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	font-size: $font-size;
-	line-height: 1.5;
-	background-color: $color-background;
+	line-height: 1.5;	
 
 	@include media('<=phablet') {
 		font-size: 0.8rem;
@@ -41,15 +40,15 @@ body {
 }
 
 .app {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	@include flex(flex, center, center);
 	flex-direction: column;
 	height: 100%;
 	padding: $gutter;
-    text-align: center;
-    color: $color-primary;
-	border: 40px solid #6f5be8;
+	color: $color-text;
+	text-align: center;
+	border: $border-main solid $color-primary;
 
 	&__logo {
 		max-width: 300px;

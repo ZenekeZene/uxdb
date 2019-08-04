@@ -1,5 +1,9 @@
 <template>
   <main class="app">
+	<nav class="navigation">
+		<a href="/archive">Archive</a>
+		<a href="/sponsorship">Sponsorship</a>
+	</nav>
     <router-view/>
   </main>
 </template>

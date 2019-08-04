@@ -1,0 +1,11 @@
+.navigation {
+	@include absolute(top $border-main right $border-main);
+	padding: $gutter;
+
+	a {
+		padding: $gutter;
+		font-weight: $font-bold;
+		text-decoration: none;
+		color: $color-text;
+	}
+}

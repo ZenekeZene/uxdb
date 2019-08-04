@@ -7,8 +7,19 @@
 				creatives and researchers</h1>
 			<div class="subscribe">
 				<input type="email">
-				<button>Subscribe</button>
+				<button class="btn">Subscribe</button>
 			</div>
+			<p>Get the last curated articles by top designers,
+				resources and tools and learning materials to
+				achieve a successful career in design, we are
+				sure about it 😚
+			</p>
+			<ul class="features">
+				<li>Latest relevant articles</li>
+				<li>Handpicked resources</li>
+				<li>Curated design & research tools</li>
+				<li>Lots and lots of love 💜</li>
+			</ul>
 		</section>
 	</article>
 </template>
