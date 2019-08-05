@@ -11,7 +11,7 @@ body {
 }
 
 body {
-	@include share(width, max-width);
+	@include share(width, max-width, 100%);
 	min-height: 100%;
 	@include share(margin, padding, 0);
 	-webkit-font-smoothing: antialiased;
