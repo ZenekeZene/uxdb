@@ -1,7 +1,8 @@
 .home {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	position: relative;
+	@include flex(flex, start, start);
+	flex-direction: column;
+	padding: $gutter-1-2;
 	
 	&__logo {
 		width: 40vw;
@@ -9,6 +10,6 @@
 	}
 
 	&__form {
-		padding: $gutter;
+		margin-top: $gutter-2;
 	}
 }

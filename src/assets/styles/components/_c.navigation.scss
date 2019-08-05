@@ -1,9 +1,10 @@
 .navigation {
 	@include absolute(top $border-main right $border-main);
-	padding: $gutter;
+	display: flex;
+	flex-direction: column;
 
 	a {
-		padding: $gutter;
+		padding: $gutter-1-2 $gutter;
 		font-weight: $font-bold;
 		text-decoration: none;
 		color: $color-text;
