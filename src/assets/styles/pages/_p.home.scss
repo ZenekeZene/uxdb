@@ -4,7 +4,7 @@
 	flex-direction: column;
 	width: 100%;
 	padding: $gutter-1-2;
-	max-width: map_get($breakpoints, 'big-desktop');
+	max-width: 84rem;
 	
 	&__logo {
 		display: block;

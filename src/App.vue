@@ -5,7 +5,7 @@
 		<a href="/sponsorship">Sponsorship</a>
 	</nav>
 	<router-view/>
-	<footer class="footer">
+	<footer class="footer" margin-top-2>
 		<p>Published by Juan Jesús Millo. Developed by Héctor Villar Mozo.
 			<a href="#">Follow us on Linkedin</a>.</p>
 	</footer>
