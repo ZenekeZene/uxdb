@@ -1,8 +1,8 @@
 <template>
   <main class="app">
 	<nav class="navigation">
-		<a href="/archive">Archive</a>
-		<a href="/sponsorship">Sponsorship</a>
+		<router-link to="archive">Archive</router-link>
+		<router-link to="sponsorship">Sponsorship</router-link>
 	</nav>
 	<router-view/>
 	<footer class="footer" margin-top-2>

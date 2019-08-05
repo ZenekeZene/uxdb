@@ -1,5 +1,6 @@
 .navigation {
 	@include absolute(top var(--border-main) right var(--border-main));
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;

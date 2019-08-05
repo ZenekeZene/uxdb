@@ -1,0 +1,23 @@
+.archive {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 7rem;
+
+	&__back {
+		@include absolute(top $gutter-2 left $gutter-2);
+		width: 5rem;
+	}
+
+	&__dropdown {
+		order: 1;
+	}
+
+	&__newsletter {
+		order: 2;
+		height: 30rem;
+		background-color: rgba(165, 145, 245, 0.3);
+		border-radius: 4px;
+		box-shadow: 0 4px 12px rgba($color-black, 0.04);
+	}
+}

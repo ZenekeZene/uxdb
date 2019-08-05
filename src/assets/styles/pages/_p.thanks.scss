@@ -1,11 +1,26 @@
 .thanks {
+	position: relative;
+	max-width: 500px;
+
 	&__image {
 		width: 100%;
-		margin-top: $gutter * 6;
+		margin-top: $gutter * 7;
 		margin-bottom: $gutter;
 
 		img {
 			max-width: 20vw;
 		}
+
+		@include media('>=tablet') {
+			@include absolute(top 8rem * -1 right 2rem * -1);
+			width: 8rem;
+			margin-top: 0;
+		}
+	}
+
+	.btn {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }

@@ -6,4 +6,10 @@
 	background: linear-gradient(135deg, #A894F5 0%, #6F5BE8 100%);
 	border-radius: 4px;
 	box-shadow: 0 4px 12px 0 rgba(165,145,245,0.59);
+	border: transparent;
+
+	&.--revert {
+		color: $color-primary;
+		background: $color-white;
+	} 
 }
