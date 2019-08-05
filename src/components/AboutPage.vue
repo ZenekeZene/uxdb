@@ -14,10 +14,7 @@
 					achieve a successful career in design, we are
 					sure about it 😚
 				</p>
-				<div class="subscribe">
-					<input type="email" placeholder="Enter your email">
-					<button class="btn"><img src="../assets/images/icon-enter.svg"></button>
-				</div>
+				<subscribe-popup></subscribe-popup>
 			</div>
 			<ul class="features">
 				<li class="features__item">
@@ -37,8 +34,12 @@
 	</article>
 </template>
 <script>
+import SubscribePopup from './SubscribePopup';
 
-	export default {
-		name: 'AboutPage',
-	};
+export default {
+	name: 'AboutPage',
+	components: {
+		SubscribePopup,
+	},
+};
 </script>

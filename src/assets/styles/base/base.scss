@@ -14,9 +14,13 @@ ol {
 	padding: $gutter-1-2;
 }
 
-a:visited,
-a:focus {
-	color: inherit;
+a {
+	color: $color-text;
+	text-decoration: none;
+
+	&[class*="active"] {
+		color: $color-primary;
+	}
 }
 
 h1,

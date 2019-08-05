@@ -32,7 +32,7 @@ body {
 	user-select: none;
 	font-size: $font-size;
 	line-height: 1.6;
-	background-color: #f5f5fb;
+	background-color: $color-primary;
 }
 
 .app {
@@ -43,6 +43,7 @@ body {
 	min-height: 100%;
 	padding: $gutter;
 	color: $color-text;
+	background-color: #f5f5fb;
 	border: var(--border-main) solid $color-primary;
 	transition: border-width 250ms ease-in;
 

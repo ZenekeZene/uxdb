@@ -3,9 +3,14 @@
 	flex-direction: column;
 	width: 100%;
 	padding-top: 7rem;
+	padding-bottom: 6rem;
 
 	&__back {
-		@include absolute(top $gutter-2 left $gutter-2);
+		position: absolute;
+		$offset: calc(var(--border-main) + #{$gutter});
+		top: $offset;
+		left: $offset;
+		@include flex(flex, center, center);
 		width: 5rem;
 	}
 
@@ -19,5 +24,24 @@
 		background-color: rgba(165, 145, 245, 0.3);
 		border-radius: 4px;
 		box-shadow: 0 4px 12px rgba($color-black, 0.04);
+	}
+
+	@include media('>=desktop') {
+		flex-direction: row;
+		padding: 0;
+
+		&__back {
+			position: static;
+		}
+
+		&__newsletter {
+			flex-grow: 1;
+			order: 1;
+			margin: 0 $gutter $gutter $gutter;
+		}
+
+		&__dropdown {
+			width: 14rem;
+		}
 	}
 }

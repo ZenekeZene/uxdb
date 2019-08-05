@@ -25,3 +25,46 @@
 		}
 	}
 }
+
+.subscribe-popup {
+	position: fixed;
+	$offset: calc(var(--border-main) + #{$gutter}); 
+	right: $offset;
+	bottom: $offset;
+	z-index: 1;
+	width: 30rem;
+	padding: $gutter-2;
+	font-size: $font-size-l;
+	background-color: $color-white;
+	box-shadow: 0 4px 12px 2px rgba(165, 145, 245, 0.3);
+	border-radius: 4px;
+
+	&__close {
+		@include absolute(top $gutter right $gutter);
+		@include size($gutter-2);
+		padding: $gutter;
+		text-align: center;
+	}
+
+	&__image {
+		@include absolute(top -3rem right 2rem);
+		width: 3rem;
+	}
+
+	.subscribe {
+		margin-bottom: 0;
+	}
+
+	@include media('<=tablet') {
+		$offset: calc(var(--border-main) + #{$gutter-1-2}); 
+		right: $offset;
+		bottom: $offset;
+		width: calc(100% - 2.5rem);
+		padding: $gutter;
+		font-size: $font-size-m;
+
+		.subscribe {
+			margin-top: 0;
+		}
+	}
+}

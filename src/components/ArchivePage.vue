@@ -1,6 +1,6 @@
 <template>
 	<article class="archive">
-		<button class="btn --revert archive__back">Back</button>
+		<router-link to="/" class="btn --revert archive__back">Back</router-link>
 		<section class="archive__newsletter">
 
 		</section>
@@ -11,10 +11,16 @@
 			<option>Newsletter IV</option>
 			<option>Newsletter V</option>
 		</select>
+		<subscribe-popup></subscribe-popup>
 	</article>
 </template>
 <script>
+import SubscribePopup from './SubscribePopup';
+
 export default {
 	name: 'ArchivePage',
+	components: {
+		SubscribePopup,
+	},
 };
 </script>
