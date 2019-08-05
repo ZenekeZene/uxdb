@@ -4,7 +4,11 @@
 		<a href="/archive">Archive</a>
 		<a href="/sponsorship">Sponsorship</a>
 	</nav>
-    <router-view/>
+	<router-view/>
+	<footer class="footer">
+		<p>Published by Juan Jesús Millo. Developed by Héctor Villar Mozo.
+			<a href="#">Follow us on Linkedin</a>.</p>
+	</footer>
   </main>
 </template>
 

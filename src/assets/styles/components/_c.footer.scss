@@ -2,4 +2,10 @@
 	color: #8c8a9e;
 	font-size: $font-size-s;
 	font-weight: $font-medium;
+
+	@include media('>=big-desktop') {
+		display: block;
+		width: 100%;
+		text-align: right;
+	}
 }

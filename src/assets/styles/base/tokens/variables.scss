@@ -4,7 +4,8 @@ $breakpoints: $coke-breakpoints;
 $font-size: $coke-font-size;
 
 // (2)
-$border-main: 12px;
-
+:root {
+	--border-main: 12px;
+}
 // 1: Transference Coke -> Starr variables.
 // 2: Starr variables.

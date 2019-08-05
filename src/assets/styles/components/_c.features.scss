@@ -1,7 +1,8 @@
 .features {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	grid-template-rows: 1fr;
+	grid-gap: 0.5vw;
 	text-align: left;
 	margin-bottom: $gutter-3;
 	padding: 0;
@@ -9,7 +10,7 @@
 	&__item {
 		display: flex;
 		align-items: center;
-		padding: $gutter-1-2 0;
+		padding: $gutter-1-2;
 		font-size: $font-size-l;
 		font-weight: $font-medium;
 

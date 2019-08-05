@@ -1,13 +1,19 @@
 .navigation {
-	@include absolute(top $gutter-2 right $border-main);
+	@include absolute(top var(--border-main) right var(--border-main));
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	margin: $gutter;
 
 	a {
 		padding: $gutter-1-2 $gutter;
 		font-weight: $font-bold;
 		text-decoration: none;
 		color: $color-text;
+	}
+
+	@include media('>tablet') {
+		flex-direction: row;
+		justify-content: flex-end;
 	}
 }

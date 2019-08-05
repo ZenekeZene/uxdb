@@ -11,7 +11,8 @@ body {
 }
 
 body {
-	@include share(width, max-width, height, max-height, 100%);
+	@include share(width, max-width);
+	min-height: 100%;
 	@include share(margin, padding, 0);
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -37,14 +38,21 @@ body {
 .app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@include flex(flex, center, center);
+	@include flex(flex, start, center);
 	flex-direction: column;
+	min-height: 100%;
 	padding: $gutter;
 	color: $color-text;
-	border: $border-main solid $color-primary;
+	border: var(--border-main) solid $color-primary;
+	transition: border-width 250ms ease-in;
 
 	&__logo {
-		max-width: 300px;
+		max-width: 14rem;
 		margin-bottom: $gutter;
+	}
+
+	@include media('>tablet') {
+		--border-main: 40px;
+		padding: $gutter-4;
 	}
 }

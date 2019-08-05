@@ -1,15 +1,50 @@
 .home {
 	position: relative;
-	@include flex(flex, start, start);
+	@include flex(flex, center, center);
 	flex-direction: column;
+	width: 100%;
 	padding: $gutter-1-2;
+	max-width: map_get($breakpoints, 'big-desktop');
 	
 	&__logo {
+		display: block;
 		width: 30vw;
 		max-width: 300px;
+
+		@include media('>desktop') {
+			width: 35vw;
+			max-width: map_get($breakpoints, 'phablet');
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 
 	&__form {
 		margin-top: $gutter-2;
+	}
+
+	@include media('>=big-desktop') {
+		flex-direction: row;
+		align-items: flex-start;
+
+		&__logo {
+			padding-right: $gutter-2;
+		}
+	}
+}
+
+.intro-subscribe {
+	display: flex;
+	flex-direction: column;
+
+	@include media('>desktop') {
+
+		& > p {
+			order: 2;
+		}
+		
+		.subscribe {
+			order: 1;
+		}
 	}
 }
