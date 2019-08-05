@@ -7,7 +7,7 @@ html {
 html,
 body {
 	height: 100%;
-	@include open-sans;
+	@include font-primary;
 }
 
 body {
@@ -30,7 +30,8 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	font-size: $font-size;
-	line-height: 1.5;	
+	line-height: 1.6;
+	background-color: #f5f5fb;
 }
 
 .app {

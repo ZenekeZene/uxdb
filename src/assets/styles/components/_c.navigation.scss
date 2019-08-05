@@ -1,7 +1,8 @@
 .navigation {
-	@include absolute(top $border-main right $border-main);
+	@include absolute(top $gutter-2 right $border-main);
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
 
 	a {
 		padding: $gutter-1-2 $gutter;

@@ -3,42 +3,30 @@
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	text-align: left;
+	margin-bottom: $gutter-3;
+	padding: 0;
 
-	li {
-		padding: $gutter;
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: $gutter-1-2 0;
 		font-size: $font-size-l;
-	}
-}
+		font-weight: $font-medium;
 
-.btn {
-	width: 200px;
-	height: 56px;
-	color: $color-white;
-	background: linear-gradient(135deg, #A894F5 0%, #6F5BE8 100%);
-	border-radius: 4px;
-	box-shadow: 0 4px 12px 0 rgba(165,145,245,0.59);
-}
+		& > span {
+			@include flex(flex, center, center);
+			$size: 4rem;
+			@include size($size);
+			@include share(min-width, min-height, $size);
+			margin-right: $gutter;
+			padding: 0.7rem;
+			text-align: center;
+			background-color: $color-white;
+			border-radius: 6px;
+		}
 
-.subscribe {
-	position: relative;
-	display: flex;
-	align-items: center;
-	width: 100%;
-	margin-top: $gutter-2;
-	margin-bottom: $gutter-2;
-
-	input {
-		width: 78%;
-		height: 48px;
-		padding: $gutter;
-		background-color: $color-white;
-		border: 2px solid $color-primary;
-		box-shadow: 0 4px 12px 0 rgba(165, 145, 245, 0.2);
-		border-radius: 4px;
-	}
-
-	.btn {
-		@include absolute(right);
-		width: 32%;
+		img {
+			width: 100%;
+		}
 	}
 }

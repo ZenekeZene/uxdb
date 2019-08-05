@@ -10,15 +10,11 @@ $font-extra-bold: 800;
 $font-black: 900;
 
 $font-weights: (
-	'thin': $font-thin,
-	'extra-light': $font-extra-light,
 	'light': $font-light,
 	'regular': $font-regular,
 	'medium': $font-medium,
 	'semi-bold': $font-semi-bold,
 	'bold': $font-bold,
-	'extra-bold': $font-extra-bold,
-	'black': $font-black,
 );
 
 @each $font-name, $font-value in $font-weights {
