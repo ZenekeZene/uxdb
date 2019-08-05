@@ -40,7 +40,7 @@
 	border-radius: 4px;
 
 	&__close {
-		@include absolute(top $gutter right $gutter);
+		@include absolute(top right $gutter);
 		@include size($gutter-2);
 		padding: $gutter;
 		text-align: center;
