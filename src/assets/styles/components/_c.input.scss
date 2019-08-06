@@ -1,11 +1,11 @@
 @mixin input {
-	width: 100%;
-	height: 48px;
-	padding: $gutter;
-	background-color: $color-white;
-	border: 2px solid $color-primary;
-	box-shadow: 0 4px 12px 0 rgba(165, 145, 245, 0.2);
-	border-radius: 4px;
+	width: 100% !important;
+	height: 48px !important;
+	padding: $gutter !important;
+	background-color: $color-white !important;
+	border: 2px solid $color-primary !important;
+	box-shadow: 0 4px 12px 0 rgba(165, 145, 245, 0.2) !important;
+	border-radius: 4px !important;
 }
 
 input {

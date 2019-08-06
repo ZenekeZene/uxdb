@@ -14,7 +14,7 @@
 					achieve a successful career in design, we are
 					sure about it 😚
 				</p>
-				<subscribe-popup></subscribe-popup>
+				<subscribe-item></subscribe-item>
 			</div>
 			<ul class="features">
 				<li class="features__item">
@@ -34,12 +34,12 @@
 	</article>
 </template>
 <script>
-import SubscribePopup from './SubscribePopup';
+import SubscribeItem from './SubscribeItem';
 
 export default {
 	name: 'AboutPage',
 	components: {
-		SubscribePopup,
+		SubscribeItem,
 	},
 };
 </script>

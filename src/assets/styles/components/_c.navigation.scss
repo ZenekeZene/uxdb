@@ -7,9 +7,12 @@
 	margin: $gutter;
 
 	a {
+		width: 100%;
 		padding: $gutter-1-2 $gutter;
 		font-weight: $font-bold;
+		font-size: $font-size-l;
 		text-decoration: none;
+		text-align: right;
 	}
 
 	@include media('>tablet') {

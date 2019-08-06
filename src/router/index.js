@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import AboutPage from '../components/AboutPage';
 import ThanksPage from '../components/ThanksPage';
 import ArchivePage from '../components/ArchivePage';
+import TestPage from '../components/TestPage';
 
 Vue.use(Router);
 
@@ -23,5 +24,10 @@ export default new Router({
 			name: 'archive',
 			component: ArchivePage,
 		},
+		{
+			path: '/test',
+			name: 'test',
+			component: TestPage,
+		}
 	],
 });
