@@ -1,9 +1,5 @@
 <template>
 	<section>
-		<!--<input type="email" placeholder="Enter your email" />
-		<button class="btn">
-		<img src="../assets/images/icon-enter.svg" />
-		</button>-->
 		<form
 			id="sib-form"
 			method="POST"

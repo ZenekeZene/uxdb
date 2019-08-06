@@ -5,22 +5,41 @@
 
 		</section>
 		<select class="archive__dropdown dropdown">
-			<option>Newsletter I</option>
-			<option>Newsletter II</option>
-			<option>Newsletter III</option>
-			<option>Newsletter IV</option>
-			<option>Newsletter V</option>
+			<option v-for="(campaign, index) in campaigns" :key="index">
+				{{ campaign.subject }}
+			</option>
 		</select>
 		<subscribe-popup></subscribe-popup>
 	</article>
 </template>
 <script>
+import axios from 'axios';
 import SubscribePopup from './SubscribePopup';
 
 export default {
 	name: 'ArchivePage',
 	components: {
 		SubscribePopup,
+	},
+	data() {
+		return {
+			campaigns: [],
+		};
+	},
+	mounted() {
+		axios
+		.get(`${process.env.URL}:${process.env.PORT}/emailCampaigns`, {
+			headers: {
+				accept: 'application/json',
+			},
+		})
+		.then((response) => {
+			this.campaigns = JSON.parse(response.data.body).campaigns;
+			// this.$refs.parse.innerHTML = campaigns[0].htmlContent;
+		})
+		.catch((error) => {
+			console.error(error);
+		});
 	},
 };
 </script>
