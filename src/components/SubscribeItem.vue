@@ -18,6 +18,7 @@
 				name="EMAIL"
 				autocomplete="off"
 				data-required="true"
+				placeholder="Enter your email"
 				required
 			/>
 			<button class="btn" form="sib-form" type="submit">
@@ -37,15 +38,6 @@
 				<div style="background: #3E4857;"></div>
 				<div style="background: #3E4857;"></div>
 			</div>
-
-			<!--<label
-				class="entry__error entry__error--primary"
-				style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-width:px; border-color:#ff4949;"
-			></label>
-			<label
-				class="entry__specification"
-				style=" font-size:12px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#8390A4; border-width:px;"
-			>Introduzca su dirección de e-mail para suscribirse. Ej.: abc@xyz.com</label>-->
 			<input type="text" name="email_address_check" value class="input--hidden" />
 			<input type="hidden" name="locale" value="es" />
 			<input type="hidden" name="html_type" value="simple" />
