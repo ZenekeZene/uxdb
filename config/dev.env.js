@@ -4,6 +4,6 @@ const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
 	NODE_ENV: '"development"',
-	URL: '"http://localhost"',
+	URL: '"https://uxdb-proxy.netlify.com/"',
 	PORT: '"8086"',
 });
