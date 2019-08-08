@@ -1,11 +1,11 @@
 .footer {
+	@include absolute(bottom var(--border-main) right var(--border-main));
 	padding: $gutter;
 	color: #8c8a9e;
 	font-size: $font-size-s;
 	font-weight: $font-medium;
 
 	@include media('>=big-desktop') {
-		@include absolute(bottom var(--border-main) right var(--border-main));
 		display: block;
 		width: 100%;
 		text-align: right;

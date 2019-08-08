@@ -38,7 +38,8 @@ body {
 .app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@include flex(flex, center, center);
+	position: relative;
+	@include flex(flex, start, center);
 	flex-direction: column;
 	min-height: 100%;
 	padding: $gutter;

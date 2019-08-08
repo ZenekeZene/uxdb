@@ -1,5 +1,5 @@
 .dropdown {
 	@include input;
 	margin-bottom: 1rem;
-	padding: 0 $gutter;
+	padding: 0 $gutter !important;
 }

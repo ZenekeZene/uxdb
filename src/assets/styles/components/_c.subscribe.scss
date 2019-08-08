@@ -44,6 +44,7 @@
 		@include size($gutter-2);
 		padding: $gutter;
 		text-align: center;
+		cursor: pointer;
 	}
 
 	&__image {
