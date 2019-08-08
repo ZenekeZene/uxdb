@@ -2,34 +2,37 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-top: 7rem;
 	padding-bottom: 6rem;
 
-	&__back {
-		position: absolute;
-		$offset: calc(var(--border-main) + #{$gutter});
-		top: $offset;
-		left: $offset;
+	& &__back {
 		@include flex(flex, center, center);
-		width: 5rem;
+		width: 13rem;
+		line-height: 1.2;
+		background: url('../../assets/images/icon-back.svg') no-repeat $color-white;
+		background-size: $gutter;
+		background-position: $gutter;
 	}
 
 	&__dropdown {
 		order: 1;
+		margin-top: 50px;
 	}
 
 	&__newsletter {
 		order: 2;
+		flex-grow: 1;
 		min-height: 30rem;
 		background-color: rgba(165, 145, 245, 0.3);
 		border-radius: 4px;
 		box-shadow: 0 4px 12px rgba($color-black, 0.04);
-		transition: opacity 250ms ease-in;
+
+		& > div {
+			transition: opacity 250ms ease-in;
+		}
 	}
 
 	@include media('>=desktop') {
 		flex-direction: row;
-		padding: 0;
 
 		&__back {
 			position: static;
@@ -42,7 +45,7 @@
 		}
 
 		&__dropdown {
-			width: 14rem !important;
+			width: 18rem !important;
 		}
 	}
 }

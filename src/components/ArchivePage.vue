@@ -1,9 +1,9 @@
 <template>
 	<article class="archive">
-		<router-link to="/" class="btn --revert archive__back">Back</router-link>
+		<router-link to="/" class="btn --revert archive__back">Back to home</router-link>
 		<transition name="fade" mode="out-in">
-			<section class="archive__newsletter" ref="parse">
-				
+			<section class="archive__newsletter">
+				<div ref="parse" style="opacity: 0;"></div>
 			</section>
 		</transition>
 		<section padding class="archive__dropdown" v-if="errorLoad">
@@ -44,6 +44,9 @@ export default {
 	},
 	methods: {
 		change($event) {
+			this.showNewsletterSelected();
+		},
+		showNewsletterSelected() {
 			this.$refs.parse.style.opacity = 0;
 			this.$nextTick(() => {
 				setTimeout(() => {
@@ -65,9 +68,8 @@ export default {
 				this.campaigns = JSON.parse(response.data.body).campaigns;
 				if (this.campaigns.length > 0) {
 					this.campaignSelected = this.campaigns[0];
-					this.$refs.parse.innerHTML = this.campaignSelected.htmlContent;
+					this.showNewsletterSelected();
 				}
-				// this.$refs.parse.innerHTML = campaigns[0].htmlContent;
 				this.errorLoad = false;
 			})
 			.catch((error) => {

@@ -4,6 +4,7 @@ import AboutPage from '../components/AboutPage';
 import ThanksPage from '../components/ThanksPage';
 import ArchivePage from '../components/ArchivePage';
 import TestPage from '../components/TestPage';
+import SponsorshipsPage from '../components/SponsorshipsPage';
 
 Vue.use(Router);
 
@@ -25,9 +26,9 @@ export default new Router({
 			component: ArchivePage,
 		},
 		{
-			path: '/test',
-			name: 'test',
-			component: TestPage,
-		}
+			path: '/sponsorship',
+			name: 'sponsorships',
+			component: SponsorshipsPage,
+		},
 	],
 });

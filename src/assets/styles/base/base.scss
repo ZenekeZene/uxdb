@@ -17,8 +17,14 @@ ol {
 a {
 	color: $color-text;
 	text-decoration: none;
+	cursor: pointer;
+	transition: color 250ms ease-in;
 
 	&[class*="active"] {
+		color: $color-primary;
+	}
+
+	&:hover {
 		color: $color-primary;
 	}
 }
