@@ -1,0 +1,36 @@
+.card {
+	@include flex(flex, start, center);
+	max-width: 405px;
+	margin-bottom: $gutter;
+	background-color: $color-white;
+	border-radius: 6px;
+
+	> span:first-child {
+		@include flex(flex, center, center);
+		$size: 4rem;
+		@include size($size);
+		@include share(min-width, min-height, $size);
+		margin-right: $gutter;
+		padding: 0.7rem;
+		text-align: center;
+		background-color: $color-white;
+		border-radius: 6px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h4 {
+		margin: 0;
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 5px;
+		height: 64px;
+		border-radius: 8px 0 0 8px;
+		background: linear-gradient(135deg, $color-secondary 0%, $color-primary 100%);
+	}
+}

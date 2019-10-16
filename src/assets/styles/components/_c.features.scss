@@ -14,7 +14,7 @@
 		font-size: $font-size-l;
 		font-weight: $font-medium;
 
-		& > span {
+		& > span:first-child {
 			@include flex(flex, center, center);
 			$size: 4rem;
 			@include size($size);
@@ -24,6 +24,12 @@
 			text-align: center;
 			background-color: $color-white;
 			border-radius: 6px;
+		}
+
+		p {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
 		}
 
 		img {
