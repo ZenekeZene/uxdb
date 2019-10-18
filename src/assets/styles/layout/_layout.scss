@@ -1,0 +1,17 @@
+.l-main {
+	position: relative;
+	@include flex(flex, center, center);
+	flex-direction: column;
+	width: 100%;
+	padding: $gutter-1-2;
+	max-width: 84rem;
+
+	@include media('>=big-desktop') {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.l-main__image {
+		padding-right: $gutter-2;
+	}
+}

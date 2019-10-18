@@ -3,32 +3,45 @@
 	display: flex;
 	align-items: center;
 	width: 100%;
-	margin-top: $gutter-2;
-	margin-bottom: $gutter-2;
 
 	.btn {
 		@include absolute(right);
-		display: inline-block;
 		display: flex;
 		align-items: center;
-		width: auto;
-		height: calc(100% - 6px);
-		margin-right: 4px;
+		justify-content: center;
 		padding: 0 $gutter;
-		color: $color-primary;
-		background: white;
-		border: none;
-		box-shadow: none;
 
 		img {
 			width: 2rem;
+		}
+	}
+
+	input[type="email"] {
+		width: calc(100% - 10rem);
+		padding: 0 $gutter-3 0 $gutter;
+	}
+
+	&.--is-mini {
+
+		input[type="email"] {
+			width: 100%;
+		}
+
+		.btn {
+			width: auto;
+			height: $height-input;
+			margin-right: 2px;
+			color: $color-primary;
+			background: transparent;
+			border: none;
+			box-shadow: none;
 		}
 	}
 }
 
 .subscribe-popup {
 	position: fixed;
-	$offset: calc(var(--border-main) + #{$gutter}); 
+	$offset: calc(var(--border-main) + #{$gutter});
 	right: $offset;
 	bottom: $offset;
 	z-index: 1;
@@ -57,7 +70,7 @@
 	}
 
 	@include media('<=tablet') {
-		$offset: calc(var(--border-main) + #{$gutter-1-2}); 
+		$offset: calc(var(--border-main) + #{$gutter-1-2});
 		right: $offset;
 		bottom: $offset;
 		width: calc(100% - 2.5rem);

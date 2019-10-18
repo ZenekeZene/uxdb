@@ -5,6 +5,7 @@
 			method="POST"
 			action="https://sibforms.com/serve/MUIEAELiF6BjbZdvHSHk7gods9xwxQVCmLQzVNTXRe9oeGk6VWM-_xlArPUXU8ZorRQxzTxHVisnYkWSUbgAnnJdmWgpTX2mY5cEPA2Twi5ym4Tvgbrf0LXvGQVVtWjgqevfyKOZ7lf97LhZZC1BLJr2_gqe5jKrHI8V0ApPki0szOZopYF0kXrJKNhMPD6bCRLO42HUQhDYjYB5"
 			class="subscribe"
+			:class="{ '--is-mini': isMini }"
 		>
 			<input
 				class="input"
@@ -18,7 +19,8 @@
 				required
 			/>
 			<button class="btn" form="sib-form" type="submit">
-				<img src="../assets/images/icon-enter.svg" />
+				<img v-if="isMini" src="../assets/images/icon-enter.svg" />
+				<span v-if="!isMini">Subscribe&nbsp;&nbsp;♥</span>
 			</button>
 			<div class="sib-loader" style="display: none;">
 				<div style="background: #3E4857;"></div>
@@ -43,6 +45,12 @@
 <script>
 export default {
 	name: 'SubscribeItem',
+	props: {
+		isMini: {
+			type: Boolean,
+			default: false,
+		},
+	},
 };
 </script>
 <style>

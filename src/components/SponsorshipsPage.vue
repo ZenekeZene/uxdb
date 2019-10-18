@@ -1,7 +1,7 @@
 <template>
-    <article class="home">
-        <img class="home__logo" src="../../static/sponsorships.svg" />
-        <section class="home__form">
+    <article class="l-main">
+        <img class="sponsorships-logo l-main__image" src="../../static/sponsorships.svg" />
+        <section class="form">
             <h1>DAdvertise on our weekly mail publication and be heared by a community in love with what it does</h1>
             <div class="intro-subscribe">
                 <p>People from all around the world reads our publication, and they love it. The readers are mostly product designers, creative ones working as freelances, researches as user experience designers and front-end developers.</p>

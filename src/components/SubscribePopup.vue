@@ -3,20 +3,17 @@
 		<span class="subscribe-popup__close" @click="$emit('close', false)">X</span>
 		<img class="subscribe-popup__image" src="../assets/images/eye-popup.svg">
 		<p margin-top>Get it straight away in your inbox every Tuesday</p>
-		<div class="subscribe">
-			<input type="email" placeholder="Enter your email">
-			<button class="btn"><img src="../assets/images/icon-enter.svg"></button>
-		</div>
+		<subscribe-item isMini></subscribe-item>
 	</article>
 </template>
 
 <script>
-import SubscribePopup from './SubscribePopup';
+import SubscribeItem from './SubscribeItem';
 
 export default {
 	name: 'SubscribePopup',
 	components: {
-		SubscribePopup,
+		SubscribeItem,
 	},
 };
 </script>

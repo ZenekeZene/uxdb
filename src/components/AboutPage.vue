@@ -1,10 +1,10 @@
 <template>
-	<article class="home">
+	<article class="l-main">
 		<picture style="width: 100%;">
-			<source media="(min-width: 48rem)" class="home__logo --center" srcset="../../static/hero.svg">
-			<img class="home__logo" src="../assets/images/logo.svg">
+			<source media="(min-width: 48rem)" class="logo --center l-main__image" srcset="../../static/hero.svg">
+			<img class="logo l-main__image" src="../assets/images/logo.svg">
 		</picture>
-		<section class="home__form">
+		<section class="form">
 			<h1>Discover the newsletter which helps more
 				than 1000 designers,
 				creatives and researchers</h1>
@@ -14,7 +14,7 @@
 					achieve a successful career in design, we are
 					sure about it 😚
 				</p>
-				<subscribe-item></subscribe-item>
+				<subscribe-item margin-vertical-2></subscribe-item>
 			</div>
 			<ul class="features">
 				<li class="features__item">

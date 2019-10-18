@@ -1,0 +1,19 @@
+.logo {
+	display: block;
+	width: 30vw;
+	max-width: 300px;
+
+	@include media('>desktop') {
+		width: 35vw;
+		max-width: map_get($breakpoints, 'phablet');
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.sponsorships-logo {
+	@include media('<desktop') {
+		width: 83vw;
+    	padding-right: 0!important;
+	}
+}
